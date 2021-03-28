@@ -42,7 +42,7 @@ logo = (""" ========================================
 
   BERBAGI SCRIPT LOGIN TOKEN && COOKIES
 
-  CUMA RECODE YANG MAU CHAT WA
+  
 
        087828725073
 
