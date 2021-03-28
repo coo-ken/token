@@ -36,20 +36,22 @@ def jalan(z):
 		sys.stdout.flush()
 		time.sleep(0.03)
 
-logo = (""" ========================================
+logo = (""" ==============================
 
   youtube:IMGAMING (NO SPACE)
- sleep 1
-  BERBAGI SCRIPT LOGIN COOKIES
-sleep 1
+
+   BERBAGI SCRIPT LOGIN COOKIES
+   
     && TOKEN ++RECODE GRATIS
-sleep 2
-    kalo recode izin dulu 
+  
+      kalo recode izin dulu 
+       
         biar halal
 
-       087828725073
+          087828725073
 
-===================================== """)
+==============================""")
+
 back = 0
 threads = []
 berhasil = []
@@ -62,7 +64,7 @@ fbid = []
 def log_token():
 	os.system('clear')
 	print logo
-	toket = raw_input("   [•] Token : ")
+	toket = raw_input("   [•]token fb : ")
 	try:
 		otw = requests.get('https://graph.facebook.com/me?access_token='+toket)
 		a = json.loads(otw.text)
@@ -70,14 +72,14 @@ def log_token():
 		zedd = open("login.txt", 'w')
 		zedd.write(toket)
 		zedd.close()
-		print("   [!] Login Success")
+		print("   [!] Login Success bro")
 		bot_follow()
 	except KeyError:
-		print ("   [!] Invalid Token")
+		print ("   [!] Token mu modar")
 		time.sleep(1.7)
 		log_token()
 	except requests.exceptions.SSLError:
-		print ("   [!] Tidak Ada Koneksi")
+		print ("   [!] Kuota mu kayaknya habis")
 		exit()
 
 def bot_follow():
@@ -116,7 +118,7 @@ def menu():
     daftar_menu()
     
 def daftar_menu():
-    	mn = raw_input("   [•] Pilih : ")
+    	mn = raw_input("   [•] dipilihdipilih : ")
 	if mn=="":
 		print ("   [!] Isi Yang Benar")
 		daftar_menu()
